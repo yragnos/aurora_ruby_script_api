@@ -45,8 +45,8 @@ class HMacHelper
       
       def self.aurora_api(p, method)
       host = "api-sandbox.aurorasolar.com"
-      aurora_api_key = "bcc68198-b5b5-42ad-a34e-f99ba462d102"
-      aurora_api_secret = "e412286f-76d6-40f3-b4a5-1cb4992651e4"
+      aurora_api_key = ENV['AURORA_API_KEY']
+      aurora_api_secret = ENV['AURORA_API_SECRET']
 
             # Plain script to send a sampel request to the API
             http_verb = "#{method}"
